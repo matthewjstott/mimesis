@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <meta charset="utf-8">
         <!-- Making sure the web-site will scale fine on mobiles-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,16 @@
         <link rel="stylesheet" href="./libs/pagepiling/jquery.pagepiling.css">
         <link rel="stylesheet" href="./assets/css/linea.min.css">
         <link rel="stylesheet" href="./assets/css/vava.min.css?v=3">
+        <!-- Google-fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Turret+Road:700&display=swap" rel="stylesheet">
         <!-- Favicons-->
         <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
@@ -25,239 +36,195 @@
         <meta name="msapplication-config" content="./favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         <!-- Site title-->
-        <title>MJS</title>
+        <title>MimesiS</title>
     </head>
-    <body class="loading grey lighten-4 demos">
-        <div class="pace" id="pace">
-            <div class="pace-activity"></div>
+    <body class="loading">
+        <!-- Navigation-->
+        <div class="navbar-fixed">
+            <nav class="classic">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Classic navigation, visible on desktop only-->
+                                <ul class="hidden hide-on-med-and-down">
+                                    <li>
+                                        <a class="dropdown-button" style="font-family: Cinzel Decorative;border-bottom:none;" data-activates="dropdown-index" data-beloworigin="true" data-hover="true"><span style="color: #EDDEAD">S</span><span style="color: #E9D699">t</span><span style="color: #E4CC7F">o</span><span style="color: #DDBF5F">t</span><span style="color: #AA8C2C">t</span>.<span style="color: #887023">a</span><span style="color: #6D5A1C">i</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-button" style="font-family: Fredericka the Great;border-bottom:none;" data-activates="dropdown-work" data-beloworigin="true" data-hover="true">CONCEPTS</a>
+                                    </li>
+                                    <li>
+                                            <a class="dropdown-button" style="font-family: Julius Sans One;border-bottom:none;" data-activates="dropdown-mono" data-beloworigin="true" data-hover="true">MONO</a>
+                                        
+                                
+                                    <li>
+                                        <a class="ajax-link" style="font-family: Rock Salt;border-bottom:none;" href="#/news-grid">Blog</a> 
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" style="font-family: Modak;border-bottom:none;" href="#/contact">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-content" id="dropdown-index">
+                                    <ul>
+                                        <li>
+                                            <a class="index-link underline" href="index-classic-menu-light.html">Light &amp; classic</a>
+                                        </li>
+                                        <li>
+                                            <a class="index-link underline" href="index-classic-menu-dark.html">Dark &amp; classic</a>
+                                        </li>
+                                        <li>
+                                            <a class="index-link underline" href="index-overlay-menu-light.html">Light &amp; overlay</a>
+                                        </li>
+                                        <li>
+                                            <a class="index-link underline" href="index-overlay-menu-dark.html">Dark &amp; overlay</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Dropdown for Work category-->
+                                <div class="dropdown-content" id="dropdown-work">
+                                    <ul>
+                                        <li>
+                                            <a class="ajax-link" style="font-family: Turret Road;"  href="#/work-1-column">X-D</a>
+                                        </li>
+                                        <li>
+                                            <a class="ajax-link" style="font-family: Turret Road;" href="#/work-2-columns">Future</a>
+                                        </li>
+                                        <li>
+                                            <a class="ajax-link" style="font-family: Turret Road;"  href="#/work-3-columns">3 Columns</a>
+                                        </li>
+                                        <li>
+                                            <a class="ajax-link" style="font-family: Turret Road;"  href="#/work-4-columns">4 Columns</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                 <!-- Dropdown for Mono category-->
+                                <div class="dropdown-content" id="dropdown-mono">
+                                        <ul>
+                                            <li>
+                                                <a class="ajax-link" style="font-family: Julius Sans One;" href="#/mono-index">MON<span style="color:#d4af37;">ONE</span></a>
+                                            </li>
+                                            <li>
+                                                <a class="ajax-link" style="font-family: Julius Sans One;" href="#/monox-index">MONO<span style="color:#d4af37;">S</span></a>
+                                            </li>
+                                            <li>
+                                                <a class="ajax-link" style="font-family: Julius Sans One;" href="#/monox-index"><span style="color:#d4af37;">COS</span>MONO</a>
+                                            </li>
+                                    
+                                        </ul>
+                                    </div>
+                                <!-- Dropdown for News category-->
+                                <div class="dropdown-content" id="dropdown-news">
+                                    <ul>
+                                        <li>
+                                            <a class="ajax-link" href="#/news-grid">Grid</a>
+                                        </li>
+                                        <li>
+                                            <a class="ajax-link" href="#/news-alternative">Alternative</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Medium/mobile slide out navigation-->
+                                <ul class="side-nav" id="slide-out">
+                                    <!-- Index side nav menu section-->
+                                    <li class="no-padding">
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header">Index</a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible-body-list">
+                                                        <li>
+                                                            <a href="index-classic-menu-light.html">Light &amp; classic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index-classic-menu-dark.html">Dark &amp; classic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index-overlay-menu-light.html">Light &amp; overlay</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index-overlay-menu-dark.html">Dark &amp; overlay</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- Work side nav menu section-->
+                                    <li class="no-padding">
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header">Work</a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible-body-list">
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-1-column">1 Column</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-2-columns">2 Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-3-columns">3 Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-4-columns">4 Columns</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/about">About</a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/prices">Prices</a>
+                                    </li>
+                                    <!-- News side nav menu section-->
+                                    <li class="no-padding">
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header">News</a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible-body-list">
+                                                        <li>
+                                                            <a class="ajax-link" href="#/news-grid">Grid</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/news-alternative">Alternative</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/contact">Contact</a>
+                                    </li>
+                                </ul>
+                                <!-- Logo/brand name--><a class="index-link underline" href="index-classic-menu-light.html"><span class="right hide-on-med-and-down"><span class="logo" style="font-family: Cinzel Decorative"><span style="color: #6D5A1C">M</span><span style="color: #887023">i</span><span style="color: #AA8C2C">m</span><span style="color: #DDBF5F">e</span><span style="color: #E4CC7F">s</span><span style="color: #E9D699">i</span><span style="color: #EDDEAD">S</span></span></span></a><span class="left show-on-medium-and-down hide-on-large-only"><span class="logo">Vava</span></span><span class="right show-on-medium-and-down hide-on-large-only"><a class="sidenav-toggle" id="sidenav-toggle" href="#" data-activates="slide-out">Menu</a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l8 offset-l2 center">
-                    <h1>MJS</h1>
-                    <p class="flow-text">This theme is a perfect combination of modern design and incredible easiness of use. Beautiful animations accompany gorgeous and extra-readable typography. Showcase your projects with simple CSS blocks, perfectly aligned to each other. Take advantage of all the components Vava has to offer.
-                    </p>
-                </div>
-            </div>
-            <div class="screens" id="screens">
-                <div class="row">
-                    <div class="col s12">
-                        <h2>Index pages</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-classic-menu-light.html">
-                            <img class="responsive-img" src="./assets/images/demos/index-classic-menu-light.png" alt="Classic">
-                            <div class="demo-title">Classic, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-classic-menu-dark.html">
-                            <img class="responsive-img" src="./assets/images/demos/index-classic-menu-dark.png" alt="Classic">
-                            <div class="demo-title">Classic, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html">
-                            <img class="responsive-img" src="./assets/images/demos/index-overlay-menu-light.png" alt="Overlay">
-                            <div class="demo-title">Overlay, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html">
-                            <img class="responsive-img" src="./assets/images/demos/index-overlay-menu-dark.png" alt="Overlay">
-                            <div class="demo-title">Overlay, Dark</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <h2>Work pages</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/work-1-column">
-                            <img class="responsive-img" src="./assets/images/demos/work-1-column-light.png" alt="Work 1 Column, Light">
-                            <div class="demo-title">Work 1 Column, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/work-1-column">
-                            <img class="responsive-img" src="./assets/images/demos/work-1-column-dark.png" alt="Work 1 Column, Dark">
-                            <div class="demo-title">Work 1 Column, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/work-2-columns">
-                            <img class="responsive-img" src="./assets/images/demos/work-2-columns-light.png" alt="Work 2 Columns, Light">
-                            <div class="demo-title">Work 2 Columns, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/work-3-columns">
-                            <img class="responsive-img" src="./assets/images/demos/work-3-columns-dark.png" alt="Work 3 Columns, Dark">
-                            <div class="demo-title">Work 3 Columns, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/work-4-columns">
-                            <img class="responsive-img" src="./assets/images/demos/work-4-columns-light.png" alt="Work 4 Columns, Light">
-                            <div class="demo-title">Work 4 Columns, Light</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <h2>Project pages</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/work/project-showcase">
-                            <img class="responsive-img" src="./assets/images/demos/project-showcase-light.png" alt="Work/Project Showcase, Light">
-                            <div class="demo-title">Work/Project Showcase, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/work/gallery">
-                            <img class="responsive-img" src="./assets/images/demos/project-gallery-dark.png" alt="Work/Gallery, Dark">
-                            <div class="demo-title">Work/Gallery, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/work/right-fixed">
-                            <img class="responsive-img" src="./assets/images/demos/project-right-fixed-light.png" alt="Work/Right Fixed, Light">
-                            <div class="demo-title">Work/Right Fixed, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/work/left-fixed">
-                            <img class="responsive-img" src="./assets/images/demos/project-left-fixed-dark.png" alt="Work/Left Fixed, Dark">
-                            <div class="demo-title">Work/Left Fixed, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/work/fullscreen-sections">
-                            <img class="responsive-img" src="./assets/images/demos/project-fullscreen-light.png" alt="Work/Fullscreen Sections, Light">
-                            <div class="demo-title">Work/Fullscreen Sections, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/work/pagepiling">
-                            <img class="responsive-img" src="./assets/images/demos/project-pagepiling-dark.png" alt="Work/Pagepiling, Dark">
-                            <div class="demo-title">Work/Pagepiling, Dark</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <h2>About, prices &amp; contact</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/about">
-                            <img class="responsive-img" src="./assets/images/demos/about-dark.png" alt="About, Dark">
-                            <div class="demo-title">About, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/prices">
-                            <img class="responsive-img" src="./assets/images/demos/prices-light.png" alt="Prices, Light">
-                            <div class="demo-title">Prices, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/contact">
-                            <img class="responsive-img" src="./assets/images/demos/contact-light.png" alt="Contact, Light">
-                            <div class="demo-title">Contact, Light</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <h2>News pages</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/news-grid">
-                            <img class="responsive-img" src="./assets/images/demos/news-grid-light.png" alt="News Grid, Light">
-                            <div class="demo-title">News Grid, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/news-alternative">
-                            <img class="responsive-img" src="./assets/images/demos/news-alternative-dark.png" alt="News Alternative, Dark">
-                            <div class="demo-title">News Alternative, Dark</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <h2>Articles</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/news/video-post">
-                            <img class="responsive-img" src="./assets/images/demos/article-video-dark.png" alt="News/Video Post, Dark">
-                            <div class="demo-title">News/Video Post, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/news/audio-post">
-                            <img class="responsive-img" src="./assets/images/demos/article-audio-light.png" alt="News/Audio Post, Light">
-                            <div class="demo-title">News/Audio Post, Light</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/news/left-fixed-post">
-                            <img class="responsive-img" src="./assets/images/demos/article-left-fixed-dark.png" alt="News/Left Fixed Post, Dark">
-                            <div class="demo-title">News/Left Fixed Post, Dark</div>
-                        </a>
-                    </div>
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-light.html#/news/right-fixed-post">
-                            <img class="responsive-img" src="./assets/images/demos/article-right-fixed-light.png" alt="News/Right Fixed Post, Light">
-                            <div class="demo-title">News/Right Fixed Post, Light</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <h2>404 error</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4 l3">
-                        <a class="demo-link" href="index-overlay-menu-dark.html#/404">
-                            <img class="responsive-img" src="./assets/images/demos/404-dark.png" alt="404, Dark">
-                            <div class="demo-title">404, Dark</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <p class="flow-text mega-padding white center">
-                            <a class="underline" href="https://themeforest.net/item/vava-minimalistic-multipurpose-portfolio-template/17954177?ref=pimmey">Purchase now</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Main container where all the pages are going to be loaded-->
+        <main id="main"></main>
+        <!-- Footer-->
 
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col s12 grey-text text-lighten-1 center">&copy;&nbsp;
-                        <a class="underline grey-text" href="http://themeforest.net/user/pimmey?ref=pimmey">pimmey</a>
-                    </div>
+                    <div class="col s12 l3 grey-text text-lighten-1">&copy; 2019 MJS</div>
                 </div>
             </div>
         </footer>
+        <!-- Spinner-->
+        <div class="curtains" id="curtains">
+            <div class="spinner-wrapper" id="spinner-wrapper">
+                <canvas class="spinner" id="spinner" width="250" height="250"></canvas>
+            </div>
+        </div>
         <!-- Libraries-->
         <script src="./libs/jquery/jquery.min.js"></script>
         <script src="./libs/ajax-navi/ajax-navi.js"></script>

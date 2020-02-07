@@ -69,7 +69,10 @@ blockquote: 2rem/1.5
 section:not(:first-of-type) {
   padding: 5rem 0;
 }
-
+@font-face {
+  font-family: "myfont";
+  src: url("../Bulgogi.woff") format('woff');
+}
 @media only screen and (max-width: 992px) {
   section:not(:first-of-type) {
     padding: 4rem 0;
@@ -214,7 +217,7 @@ button {
   src: url('assests/fonts/web/Klast.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('assests/fonts/web/Klast.woff') format('woff'), /* Modern Browsers */
        url('assests/fonts/web/Klast.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('assests/fonts/web/Klast.svg#svgFontName') format('svg'); /* Legacy iOS */
+       url('assests/fonts/web/Klast.svg#svgFontName') format('svg'); /* Legacy iOS */Bulgogi.woff
 }
 @media only screen and (max-width: 992px) {
   h2 {
